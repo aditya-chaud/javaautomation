@@ -29,7 +29,7 @@ public class TestCase1 {
 
         driver.findElement(By.id("small-searchterms")).sendKeys("smartphone");
         driver.findElement(By.className("search-box-button")).click();
-        System.out.println("hello");
+        System.out.println("hello world ia am aditya");
 //        driver.close();
     }
 }
