@@ -4,32 +4,35 @@
 3. validate title should be "Your Store"
  */
 package Day1;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.By;
-import org.openqa.selenium.chrome.ChromeOptions;
 
-import java.time.Duration;
 
 public class TestCase1 {
     public static void main(String[] args){
         ChromeDriver driver = new ChromeDriver();
-//        driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
-        driver.get("https://demo.nopcommerce.com/");
+
+        driver.get("https://www.saucedemo.com/");
         driver.manage().window().maximize();
 
         String title=driver.getTitle();
-        if(title.equals("nopCommerce demo store. Home page title")){
+        if(title.equals("Swag Labs")){
             System.out.println("Title is validated");
         }
         else{
-            System.out.println("Title is not validated.");
+            System.out.println("Wrong Title.");
         }
 
-        driver.findElement(By.id("small-searchterms")).sendKeys("smartphone");
-        driver.findElement(By.className("search-box-button")).click();
+        driver.findElement(By.name("user-name")).sendKeys("standard_user");
+        driver.findElement(By.name("password")).sendKeys("secret_sauce");
+        driver.findElement(By.name("login-button")).click();
         System.out.println("hello world ia am aditya");
-//        driver.close();
+        try {
+            Thread.sleep(5000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+        driver.close();
+
     }
 }
