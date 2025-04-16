@@ -54,6 +54,7 @@ public class Waits {
             throw new RuntimeException(e);
         }
         driver.close();
+        System.out.println("FluentWait");
 
 
 
