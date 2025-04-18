@@ -36,6 +36,8 @@ public class NavMethods {
         driver.navigate().forward();
         Thread.sleep(5000);
         driver.navigate().refresh();
+        System.out.println("Hello");
+
 
     }
 }
