@@ -51,7 +51,7 @@ public class WindowHandles {
 
             if (title.equals(expectedTitle)) {
                 System.out.println("Current URL of '" + title + "' is: " + driver.getCurrentUrl());
-                //closes this browser window only.hrms|ohs
+                //closes this browser window only.hrms|ohssafsdfafd
                 driver.close();
                 break;
             }
