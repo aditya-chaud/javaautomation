@@ -38,10 +38,7 @@ public class HandleFrame {
         //switching back to the main page
         driver.switchTo().defaultContent();
 
-
-
     }
-
 }
 
 //Types of switching
