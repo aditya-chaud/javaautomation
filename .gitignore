@@ -5,6 +5,8 @@ target/
 
 ### IntelliJ IDEA ###
 .idea/
+test-output/
+testng.xml
 Server/
 C:/
 .idea/modules.xml
