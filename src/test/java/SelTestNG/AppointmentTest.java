@@ -58,4 +58,3 @@ By default, TestNG saves all reports and respective HTML files in the Project ->
 Test Suite>Test Cases>Test Steps
 xml file>classes>Test methods
 */
-
