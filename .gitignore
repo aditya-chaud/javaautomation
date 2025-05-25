@@ -8,6 +8,7 @@ target/
 test-output/
 testng.xml
 Server/
+reports/myreports.html
 C:/
 .idea/modules.xml
 .idea/jarRepositories.xml
